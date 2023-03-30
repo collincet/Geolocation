@@ -3,7 +3,6 @@ pipeline {
     tools {
         maven 'M2_HOME'
     }
-
     triggers {
   pollSCM('* * * * *')
     }
@@ -25,8 +24,7 @@ pipeline {
            }
           stage('deploy') {
             steps {
-                echo 'deploy'
-            
+                echo 'deploy'  
             }
         }
     }
